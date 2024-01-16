@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+*{
+  transition: all 0.1s ease-in-out;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +37,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar__link--active {
+  border-bottom: 3px solid #29b6f6;
+  transition: border-bottom .5s ease-in-out;
+}
+
+.category{
+  color: azure;
+  padding: 0 4px;
+  background-color: rgb(245, 57, 23);
+  border-radius: 12px;
+}
+
+.card img, .card{
+  border-radius: 17px;
+  
+}
+
+.card:hover{
+  box-shadow: 10px 10px 25px rgba(21, 21, 21, 0.684);
 }
